@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tropical Tourism</title>
+    <script type="text/javascript">
+
+    function validate()
+    {
+        var username=document.getElementById("name");
+        var password=document.getElementById("ipass");
+        let len=password.value.length;
+        
+        if(username.value==""||username.value==null)
+        {
+            alert("Email should not be blank!");
+        }
+
+        else if(password.value==""||password.value==null)
+        {
+            alert("Password must be filled");
+        }
+
+        if(password.value=="password")
+        {
+            alert("Password should not be password");
+        }
+
+        if(len<8)
+        {
+            alert("Password must be atleast 8 characters!");
+        }
+    }    
+
+    </script>
+</head>    
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Tropical Tourism</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="file:///C:/Users/Admin/Desktop/website/services.html">SERVICES</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#cont">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Enter here">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <h1>Travels & <br><span>Tourism</span></h1>
+            <p class="par">Traveling is an element in life which must be experienced by every indvidual atleast for once in their<br>
+              lifetime. We at Tropical Tourism have made our motto to help people achieve this experience with great<br>
+               ambience and affordability.</p>
+                <button class="cn"><a href="C:\Users\Admin\Desktop\website\Sign up.html">JOIN US</a></button>
+	<br>
+	<br>
+	<br>
+	<br>
+ 
+	 <h1 id="about">ABOUT US</h1>
+     <div class="new">
+	        <p>Traveling is an element in life which must be experienced by every indvidual atleast for once in their
+              lifetime. We at Tropical Tourism have made our motto to help people achieve this experience with great
+               ambience and affordability. We offer various packages of tours and we also offer vehicles for rent with the cost ranging according per head
+               .We are proud to announce that we are in this service for the past 10 years running this business successfully with the help and co-operation of the 
+            people and, we're feeling extremely grateful on this.</p>
+	  </div>		
+
+                <div class="form" id="error">
+                    <h4>Already a user? login here</h4>
+                    <form id="frm" onsubmit="return validate()">
+                        <input type="email" id="name" name="name" placeholder="Enter Email Here" required>
+                        <input type="password" id="ipass" name="pass" placeholder="Enter Password Here">
+                        <button class="btnn" type="submit"><a href="#">Login</a></button>
+                    </form>        
+                    <p class="link">don't have an account?<br>
+                    <a href="C:\Users\Admin\Desktop\website\Sign up.html">Sign up</a> here</a></p>
+                    <p class="liw">Log in with</p>    
+ 
+	                <div class="icons">
+	                    <center>
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>                       
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>                
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+	                    </center>
+                    </div>                     
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div id="cont">
+        <footer class="fot">
+            <p class="ft">Author: Tachyon
+                <br>
+                <br>
+                <p class="ft">Mail id:</p>
+            <a href="mailto:hege@example.com">hege@example.com</a></p>
+            <br>
+            <p class="ft">Mobile no: 044-26710234</p>
+          </footer>
+    </div>>  
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

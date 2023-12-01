@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body{
+    background-image: url("avenue-g7a7672255_1920.jpg");
+    background-attachment: fixed;
+}
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+form{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 10px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+}  
+
+
+
+form>input{
+    padding: 15px;
+    border-radius: 10px;
+    border-color: aquamarine;
+    border: 3px seagreen solid;
+    background-color: #55c3c7;
+    color: black;
+}
+
+form ::placeholder{
+    color: aliceblue;
+    size: 5px;
+}
+
+form #bt{
+    height: auto;
+    width: auto;
+    justify-self: center;
+    float: auto;
+    cursor: pointer;
+}
+
+#bt{
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#gh{
+    background-color: #30a2b1;
+}
+
+
+button{
+    padding: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+}
+
+button a{
+    color: #ffffff;
+}

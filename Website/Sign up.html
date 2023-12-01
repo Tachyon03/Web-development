@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sty.css">
+    <script type="text/javascript">
+        function validate()
+        {
+        var email=document.getElementById('em');
+        var username=document.getElementById('user');
+        var password=document.getElementById('pass');
+        var cpassword=document.getElementById('cfpass');
+
+        if(email.value==""||email.value==null)
+        {
+            alert("Email should not be blank!");
+            return true;
+        }
+
+        else if(username.value==""||username.value==null)
+        {
+            alert("Username should not be blank!");
+            return true;
+        }
+
+        if(password.value==""||password.value==null)
+        {
+            alert("Enter password!");
+        }
+
+        else if (password.value!==cpassword.value)
+         {
+            alert("Confirm password");       
+        } 
+
+        else if(password.value.length<8)
+        {
+            alert("Password should be atleast 8 characters")
+        }
+
+        
+    }
+    </script>
+</head>
+<body>
+    <center>
+    <form>
+        <h1 style="color: rgb(2, 253, 128);">Sign up here!</h1>
+        <br>
+        <input id="em" type="email" name="email" value="" placeholder="Enter email here">
+        <br>
+        <br>
+        <input id="user" type="text" name="username" value="" placeholder="Enter username">
+        <br>
+        <br>
+         <input id="pass" type="password" name="password" value="" placeholder="Enter password">
+        <br>
+        <br>
+        <input id="cfpass" type="password" name="password" value="" placeholder="Confirm password">
+        <br>
+        <br>
+        <input id="bt" type="button" value="Sign up" onclick="return validate()">
+        <br>
+        <br>
+        <button id="gh" type="submit" value="Go Home"><a href="file:///C:/Users/Admin/Desktop/website/Tropical%20Tourism.html#">Go Home</a>   
+    </form>
+    </center>    
+</body>
+</html>
